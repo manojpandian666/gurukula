@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gurukulam Vidhyalaya Pre.School</title>
+        <link rel="stylesheet" href="dist/styles.css" />
+        <script src="./script.js"></script>
+        <!--Kutty Script-->
+        <script src="https://cdn.jsdelivr.net/npm/kutty@latest/dist/kutty.min.js"></script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+      <header class="sticky top-0 shadow-md z-30 w-full px-2 py-4 bg-blue-600 sm:px-4">
+        <div class="flex items-center justify-between mx-auto max-w-7xl">
+          <a href="/" title="Gurukulam Vidhyalaya Pre.School" class="flex font-custom uppercase font-normal text-white text-xl items-center">
+            Gurukulam Vidhyalaya Pre.School
+          </a>
+          <div class="flex items-center space-x-1">
+            <div class="hidden space-x-1 md:inline-flex">
+              <a href="./index.html" class="transition font-custom rounded-none text-white btn btn-md ">Home</a>
+              <a href="./staffs.html"class="transition font-custom rounded-none text-white border-b-2 btn btn-md ">Meet our Team</a>
+              <a href="./awards.html"class="btn btn-md font-custom text-white ">Awards and Recognition</a>
+              <a href="./about.html" class="btn btn-md font-custom text-white ">Contact Us</a>
+            </div>
+            <div class="inline-flex md:hidden" x-data="{ open: false }">
+              <button class="flex-none px-2 btn btn-link btn-sm" @click="open = true">
+                <svg  
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  class="w-5 h-5"
+                >
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <span class="sr-only">Open Menu</span>
+              </button>
+              <div class="absolute top-0 left-0 right-0 z-50 flex flex-col p-2 pb-4 m-2 space-y-3 bg-white rounded shadow" x-show.transition="open" @click.away="open = false" x-cloak>
+                <button class="self-end flex-none px-2 ml-2 btn btn-link btn-icon" @click="open = false">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                  <span class="sr-only">Close Menu</span>
+                </button>
+                <a href="#" class="btn btn-sm text-blue-600 btn-link">Home</a>
+                <a href="#" class="btn btn-sm text-blue-600 btn-link">Meet our Team</a>
+                <a href="#" class="btn btn-sm text-blue-600 btn-link">Awards and Recognition</a>
+                <a href="#" class="btn btn-sm text-blue-600 btn-link">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+       
+
+<section class="text-blueGray-700 ">
+  <div class="container flex flex-col items-center px-5 py-8 mx-auto">
+    <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+      <h2 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font">Meet your team.</h2>
+      <h1 class="mx-auto mb-12 text-2xl font-semibold leading-none tracking-tighter text-black lg:w-1/2 sm:text-6xl title-font"> A good team is a backbone to the organisation. </h1>
+      <p class="mx-auto text-base font-medium leading-relaxed text-blueGray-700 lg:w-1/2">The entire school is backed by this great team of staffs. Each and every students is governed by this great team.</p>
+    </div>
+  </div>
+</section>
+
+  <div class="rounded-t-xl overflow-hidden bg-gradient-to-r from-blue-50 to-blue-100 p-4">
+    <div class="flex flex-col md:flex-row p-2  rounded-lg">
+      <div class="flex-1   m-2 rounded-md text-white text-2xl font-extrabold flex items-center justify-center">
+            <div class="p-6 bg-white border rounded-lg shadow-xl ">
+              <div class="flex flex-col items-start py-2 rounded-lg lg:flex-row">
+                <div class="flex items-center justify-center w-full lg:justify-start lg:w-1/2">
+                  <img src="https://dummyimage.com/200x200/F3F4F7/8693ac" alt="placeholder" class="rounded-lg">
+                </div>
+                <div class="flex flex-col w-full text-blueGray-500 lg:ml-4">
+                  <p class="mt-3  text-base leading-relaxed text-black"> Mr.Sridhar C</p>
+                  <h2 class="mt-4 mb-8 text-xs font-semibold tracking-widest text-black uppercase lg:mt-0 title-font"> Correspondent</h2>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="rounded-t-xl overflow-hidden bg-gradient-to-r from-blue-50 to-blue-100 p-4">
+    <div class="flex flex-col md:flex-row p-2  rounded-lg">
+      <div class="flex-1   m-2 rounded-md text-white text-2xl font-extrabold flex items-center justify-center">
+            <div class="p-6 bg-white border rounded-lg shadow-xl ">
+              <div class="flex flex-col items-start py-4 px-2 rounded-lg lg:flex-row">
+                <div class="flex items-center justify-center w-full lg:justify-start lg:w-1/2">
+                  <img src="https://dummyimage.com/200x200/F3F4F7/8693ac" alt="placeholder" class="rounded-lg">
+                </div>
+                <div class="flex flex-col w-full text-blueGray-500 lg:ml-4">
+                  <p class="mt-3  text-base leading-relaxed text-black"> Mrs.Sridevi S</p>
+                  <h2 class="mt-4 mb-8 text-xs font-semibold tracking-widest text-black uppercase lg:mt-0 title-font">  Principal</h2>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rounded-t-xl overflow-hidden bg-gradient-to-r from-blue-50 to-blue-100 p-4">
+    <div class="flex flex-col md:flex-row p-2  rounded-lg">
+      <div class="flex-1  m-2 rounded-md text-white text-2xl font-extrabold flex items-center justify-center">
+            <div class="p-6 bg-white border rounded-lg shadow-xl ">
+              <div class="flex flex-col items-start py-2 rounded-lg lg:flex-row">
+                <div class="flex items-center justify-center w-full lg:justify-start lg:w-1/2">
+                  <img src="https://dummyimage.com/200x200/F3F4F7/8693ac" alt="placeholder" class="rounded-lg">
+                </div>
+                <div class="flex flex-col w-full text-blueGray-500 lg:ml-4">
+                  <p class="mt-3 text-base leading-relaxed text-black "> Mrs.Latha A</p>
+                  <h2 class="mt-4 mb-8 text-xs font-semibold tracking-widest text-black uppercase lg:mt-0 title-font"> Teacher</h2>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="flex-1 m-2 rounded-md text-white text-2xl font-extrabold flex items-center justify-center">
+            <div class="p-6 bg-white border rounded-lg shadow-xl ">
+              <div class="flex flex-col items-start rounded-lg lg:flex-row">
+                <div class="flex items-center justify-center w-full lg:justify-start lg:w-1/2">
+                  <img src="https://dummyimage.com/200x200/F3F4F7/8693ac" alt="placeholder" class="rounded-lg">
+                </div>
+                <div class="flex flex-col w-full text-blueGray-500 lg:ml-4">
+                  <p class="mt-3 text-base leading-relaxed text-black "> Mrs.Thenmozhi C</p>
+                  <h2 class="mt-4 mb-8 text-xs font-semibold tracking-widest text-black uppercase lg:mt-0 title-font"> Teacher</h2>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="flex-1  m-2 rounded-md  text-white text-2xl font-extrabold flex items-center justify-center">
+            <div class="p-6 bg-white border rounded-lg shadow-xl ">
+              <div class="flex flex-col items-start py-2 rounded-lg lg:flex-row">
+                <div class="flex items-center justify-center w-full lg:justify-start lg:w-1/2">
+                  <img src="https://dummyimage.com/200x200/F3F4F7/8693ac" alt="placeholder" class="rounded-lg">
+                </div>
+                <div class="flex flex-col w-full text-blueGray-500 lg:ml-4">
+                  <p class="mt-3 text-base leading-relaxed text-black "> Mrs.Renuka K</p>
+                  <h2 class="mt-4 mb-8 text-xs font-semibold tracking-widest text-black uppercase lg:mt-0 title-font"> Designation</h2>
+                </div>
+              </div>
+            </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <!--Footer-->
+  
+    <footer class="text-blueGray-700 transition duration-500 ease-in-out transform bg-blue-600 ">
+      <div class="flex flex-col flex-wrap justify-center p-5 md:flex-row">
+        <nav class="flex flex-wrap items-center justify-center w-full mx-auto mb-6 text-base nprd">
+          <a href="./index.html" class="px-4 py-1 mr-1 text-base font-custom text-white transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black ">Home </a>
+          <a href="./staffs.html" class="px-4 py-1 mr-1 text-base font-custom text-white transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black ">Meet our Team </a>
+          <a href="./awards.html" class="px-4 py-1 mr-1 text-base font-custom text-white transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black ">Awards and Recognition</a>
+          <a href="./about.html" class="px-4 py-1 mr-1 text-base font-custom text-white transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black ">Contact Us     </a>
+        </nav>
+        <span class="inline-flex justify-center w-full mx-auto mt-2 mr-2 sm:ml-auto sm:mt-0">
+          <a class="text-white hover:text-black">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white hover:text-black">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white hover:text-black">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white hover:text-black">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+              </path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+        <nav class="flex flex-wrap items-center justify-center w-full mx-auto mt-6 text-base nprd">
+          <a class="px-4 py-1 mr-1 text-base text-white transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black "> © 2021 </a>
+        </nav>
+      </div>
+    
+    </footer>
+  </div>
+
+    </body>
+    
+</html>

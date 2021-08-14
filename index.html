@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gurukulam Vidhyalaya Pre.School</title>
+        <link rel="stylesheet" href="dist/styles.css" />
+        <script src="./script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/kutty@latest/dist/kutty.min.js"></script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+ <header class="sticky top-0 shadow-md z-30 w-full px-2 py-4 bg-blue-600 sm:px-4">
+  <div class="flex items-center justify-between mx-auto max-w-7xl">
+    <a href="/" title="Gurukulam Vidhyalaya Pre.School" class="flex font-custom uppercase font-normal text-white text-xl items-center">
+      Gurukulam Vidhyalaya Pre.School
+    </a>
+    <div class="flex items-center space-x-1">
+      <div class="hidden space-x-1 md:inline-flex">
+        <a href="./index.html" class="font-custom rounded-none border-b-2 hover:text-black text-white btn btn-md ">Home</a>
+        <a href="./staffs.html"class="font-custom text-white hover:text-black btn btn-md">Meet our Team</a>
+        <a href="./awards.html"class="btn btn-md font-custom hover:text-black text-white">Awards and Recognition</a>
+        <a href="./about.html" class="btn btn-md font-custom hover:text-black text-white">Contact Us</a>
+      </div>
+      <div class="inline-flex md:hidden" x-data="{ open: false }">
+        <button class="flex-none px-2 btn btn-link btn-sm" @click="open = true">
+          <svg  
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            class="w-5 h-5"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <span class="sr-only">Open Menu</span>
+        </button>
+        <div class="absolute top-0 left-0 right-0 z-50 flex flex-col p-2 pb-4 m-2 space-y-3 bg-white rounded shadow" x-show.transition="open" @click.away="open = false" x-cloak>
+          <button class="self-end flex-none px-2 ml-2 btn btn-link btn-icon" @click="open = false">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+            <span class="sr-only">Close Menu</span>
+          </button>
+          <a href="#" class="btn btn-sm text-blue-600 btn-link">Home</a>
+          <a href="#" class="btn btn-sm text-blue-600 btn-link">Meet our Team</a>
+          <a href="#" class="btn btn-sm text-blue-600 btn-link">Awards and Recognition</a>
+          <a href="#" class="btn btn-sm text-blue-600 btn-link">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="text-blueGray-700 ">
+  <div class="container flex flex-col items-center px-5 py-8 mx-auto md:flex-row lg:px-28">
+    <div class="flex flex-col items-start mb-16 text-left lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:mb-0">
+      <h2 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"> Empowering children's Dream. </h2>
+      <h1 class="mb-8 text-2xl font-black tracking-tighter text-black md:text-5xl title-font"> Literacy opens the door to all learning </h1>
+      <p class="mb-8 text-base leading-relaxed text-left text-blueGray-600 "> We endeavour to provide a safe and secure environment to your children and also an education which will develop each child to his/her potential.</p>
+      <div class="flex flex-col justify-center lg:flex-row">
+        <button class="flex items-center px-6 py-2 mt-auto font-semibold text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"> Contact Us </button>
+        <p class="mt-2 text-sm text-left text-blueGray-600 md:ml-6 md:mt-0"> <!----><br class="hidden lg:block">
+          <a href="#misson" class="inline-flex items-center font-semibold text-blue-600 md:mb-2 lg:mb-0 hover:text-black " title="read more"> Read more about it » </a>
+        </p>
+      </div>
+    </div>
+    <div class="w-full lg:w-5/6 lg:max-w-lg md:w-1/2">
+      <img class="object-cover object-center rounded-lg " alt="hero" src="./img/image_2.jpg">
+    </div>
+  </div>
+</section>
+
+<!--Gallery-->
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex w-full mb-20 flex-wrap">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Glimpse of our schooling style</h1>
+      <p class="lg:pl-6 lg:w-2/3 mx-auto font-normal leading-relaxed text-base">
+        We welcome you and your child to Gurukula Vidhyalaya Pre.School excellent academic education through our dedicated and caring staff.
+        We hope that your child will be happy here. <br>We look forward to working with you and seeing your child reach his or her full potential.
+      </p>
+    </div>
+    <div class="flex flex-wrap md:-m-2 -m-1">
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./img/tinified/image_1.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./img/tinified/image_2.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="./img/tinified/image_3.jpg">
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="./img/tinified/image_4.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./img/tinified/image_5.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./img/image_4.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!---->
+<section id="misson" class="py-16 bg-blue-100">
+  <div class="container flex flex-col items-center px-5 py-8 mx-auto ">
+    <div class="flex flex-row w-full text-left ">
+      <div class="w-full mx-auto border rounded-lg shadow-xl  p-5 lg:w-1/2 bg-white">
+        <h2 class="mx-auto mb-6  font-custom font-bold leading-none tracking-tighter text-black text-2xl "> OUR MISSION STATEMENT </h2>
+        <p class="mx-auto mb-4 text-base font-custom font-medium leading-relaxed text-blueGray-700 text-xl"> Our School endeavours to work in partnership and harmony for the good of all it's members ... pupils, staff and parents.</p>
+        <p class="flex items-center mb-2 font-custom font-normal text-blueGray-700  text-xl">
+          <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+            </svg>
+          </span> Setting realistic and challenging goals
+        </p>
+        <p class="flex items-center mb-2 font-custom font-normal text-xl">
+          <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+            </svg>
+          </span> Providing a wide and varied curriculum
+        </p>
+        <p class="flex items-center mb-2 font-custom font-normal text-xl">
+          <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+            </svg>
+          </span> Encouraging Self Discipline
+        </p>
+        <p class="flex items-center mb-2 font-custom font-normal text-xl">
+          <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+            </svg>
+          </span> For Self Esteem
+        </p>
+        <p class="flex items-center mb-2 font-custom font-normal text-xl">
+          <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+            </svg>
+          </span> Promoting respect for self, diversity of others and the environment
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="px-4 py-24 mx-auto max-w-7xl">
+  <div class="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+    <div>
+      <h2 class="mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">Competition</h2>
+      <p class="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
+        Small Opportunities are often the beginning of great enterprises. Therefore competions are conducted on various occasion events
+        like Action songs, Story Telling, Colouring, Creative Drawing and Vegetable Carving. 
+        Assessment Toppers are rewarded with the Rolling Trophy for scoring the maximum marks.
+      </p>
+    </div>
+    <div class="w-full h-full bg-gray-200">
+     <img class="rounded-lg shadow-2xl" src="./img/image_4.jpg" alt="">
+    </div>
+  </div>
+  <div class="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+    <div class="order-none md:order-2">
+      <h2 class="mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">Early Start Programme</h2>
+      <p class="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
+        A programme for children aged 2.5 years and over, where they are prepared for school. Children learn pre-reading, pre-writing skills, listen to stories, painting and play.
+      </p>
+    </div>
+    <div class="w-full h-full bg-gray-200 ">
+      <img class="rounded-lg shadow-2xl" src="./img/image_3.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+  <!--Footer-->
+  
+    <footer class="text-blueGray-700 transition duration-500 ease-in-out transform bg-blue-600 ">
+      <div class="flex flex-col flex-wrap justify-center p-5 md:flex-row">
+        <nav class="flex flex-wrap items-center justify-center w-full mx-auto mb-6 text-base nprd">
+          <a href="./index.html" class="px-4 py-1 mr-1 text-base font-custom text-white transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black ">Home</a>
+          <a href="./staffs.html" class="px-4 py-1 mr-1 text-base font-custom text-white transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black ">Meet our Team</a>
+          <a href="./awards.html" class="px-4 py-1 mr-1 text-base font-custom text-white transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black ">Awards and Recognition</a>
+          <a href="./about.html" class="px-4 py-1 mr-1 text-base font-custom text-white transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black ">Contact Us</a>
+        </nav>
+        <span class="inline-flex justify-center w-full mx-auto mt-2 mr-2 sm:ml-auto sm:mt-0">
+          <a class="text-white hover:text-black">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white hover:text-black">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white hover:text-black">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white hover:text-black">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+              </path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+        <nav class="flex flex-wrap items-center justify-center w-full mx-auto mt-6 text-base nprd">
+          <a class="px-4 py-1 mr-1 text-base text-white transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black "> © 2021 </a>
+        </nav>
+      </div>
+    
+    </footer>
+    </body>
+
+</html>
